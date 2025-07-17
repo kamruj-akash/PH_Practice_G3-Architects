@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/1995/1995523.png" width="80" alt="Building Logo" />
+  
   <h1>G3 Architects – Batch‑12 Practice Task 🏛️</h1>
   <p><b>A clean, responsive "Architects Showcase" static website</b> — built as a practice task for Programming Hero Batch‑12.</p>
   <br/>
@@ -37,7 +37,7 @@ Designed and coded as part of the Programming Hero Batch‑12 practice assignmen
 ---
 
 ## 📁 Project Structure
-
+```bash
 PH_Practice_G3-Architects/
 ├── index.html
 ├── about.html # optional
@@ -49,12 +49,8 @@ PH_Practice_G3-Architects/
 │ └── images/
 │ └── [hero, project samples, icons…]
 └── README.md
+```
 
-yaml
-Copy
-Edit
-
----
 
 ## 🚀 Getting Started
 
@@ -98,4 +94,4 @@ Developed by Kamruj Akash
 
 Twitter / Portfolio / Email: source.akash@gmail.com
 
-<div align="center"> <i>“A solid structure in code reflects a solid foundation in design.”</i> </div> ```
+<div align="center"> <i>“A solid structure in code reflects a solid foundation in design.”</i> </div>
