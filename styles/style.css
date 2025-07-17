@@ -50,7 +50,8 @@ ul li {
     color: #FF900E;
 }
 
-header {
+header,
+footer {
     background-color: rgba(255, 144, 14, 0.1);
 }
 
@@ -77,12 +78,14 @@ main>section {
 .text-tittle {
     font-size: 3.5rem;
     font-weight: 600;
+    max-width: 468px;
 }
 
 .text-secondary {
     font-size: 1rem;
     font-weight: 400;
     margin: 25px 0;
+    max-width: 570px;
 }
 
 
@@ -187,6 +190,11 @@ main>section {
     font-weight: 600;
 }
 
+.features-section .text-tittle {
+    border-left: 5px solid #FF900E;
+    padding: 10px;
+}
+
 .feature-card .text-secondary {
     margin: 10px 0 0;
 }
@@ -205,7 +213,7 @@ main>section {
     flex-direction: column;
     margin-top: -100px;
     margin-left: -100px;
-    position: absolute;
+    border: none;
 }
 
 .feacure-img-headding {
@@ -221,8 +229,71 @@ main>section {
 }
 
 
+/* fact-section Css ⇩ ⇩ ⇩  */
+
+.fact-cards-parents {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 125px;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.fact-card {
+    width: 240px;
+    height: 240px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fact-card-header {
+    margin: 10px 0 5px;
+}
+
+.fact-card-drt {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Sponsor section css ⇩ ⇩ ⇩  */
+.sponsor-section {
+    text-align: center;
+}
+
+.sponsor-section .text-tittle {
+    margin: 0 auto;
+}
+
+.sponsor-section .text-secondary {
+    margin: 0 auto 50px;
+
+}
+
+.sponsor-images img {
+    margin: 0 40px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.sponsor-images img:hover {
+    filter: grayscale(0%);
+}
 
 
+/* footer css */
+
+footer {
+    padding: 30px 0;
+}
+
+footer .text-secondary {
+    margin: 0 auto;
+    text-align: center;
+}
 
 /* ------------------------------------ */
 /* Responsive Css (Mid-device) ⇩ ⇩ ⇩  */
@@ -259,6 +330,13 @@ main>section {
     .teams-section {
         flex-direction: column-reverse;
         align-items: center;
+    }
+
+    .fact-cards-parents {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        margin-top: 100px;
+        justify-content: center;
     }
 }
 
@@ -316,9 +394,18 @@ main>section {
     }
 
     .img-header {
-        margin-top: -50px;
-        margin-left: 0;
+        margin: 20px auto;
     }
 
+    .fact-cards-parents {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        margin-top: 100px;
+        justify-items: center;
+    }
+
+    .sponsor-images img {
+        margin-top: 30px;
+    }
 
 }
